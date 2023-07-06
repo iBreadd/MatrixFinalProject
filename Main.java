@@ -1,7 +1,11 @@
 import java.util.Scanner;
 
 public class Main {
+<<<<<<< HEAD
     public static int[][] inputMatrix(int rows, int columns) {
+=======
+    public static int[][] inputTheMatrix(int rows, int columns) {
+>>>>>>> origin/main
         Scanner sc = new Scanner(System.in);
 
         int[][] matrix = new int[rows][columns];
@@ -18,6 +22,7 @@ public class Main {
         return matrix;
     }
 
+<<<<<<< HEAD
     public static int[][] addMatrices(int[][] matrix1, int[][] matrix2) {
         int rows = matrix1.length;
         int columns = matrix1[0].length;
@@ -34,6 +39,11 @@ public class Main {
     }
 
     public static void printMatrix(int[][] matrix) {
+=======
+    public static void outputTheMatrix(int[][] matrix) {
+        System.out.println("Въведената матрица е:");
+
+>>>>>>> origin/main
         int rows = matrix.length;
         int columns = matrix[0].length;
 
@@ -45,6 +55,7 @@ public class Main {
         }
     }
 
+<<<<<<< HEAD
     public static boolean validateMatrixDimensions(int[][] matrix1, int[][] matrix2) {
         int rows1 = matrix1.length;
         int columns1 = matrix1[0].length;
@@ -134,5 +145,17 @@ public class Main {
         performMatrixMultiplication(matrix1,matrix2);
 
         performMatrixAddition(matrix1, matrix2);
+=======
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Въведете брой на редовете: ");
+        int rows = scanner.nextInt();
+        System.out.print("Въведете брой на колоните: ");
+        int columns = scanner.nextInt();
+
+        int[][] matrix = inputTheMatrix(rows, columns);
+        outputTheMatrix(matrix);
+>>>>>>> origin/main
     }
 }
